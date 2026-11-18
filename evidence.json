@@ -1,0 +1,72 @@
+{
+  "deployment": {
+    "hash": "0x36c7aa7b29504d44644fff91a50ca7cc3026d86c66339f720e5d95137ef720d8",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "reason": null,
+    "address": "0x79dA165D6b19A8C4F63d4a63AE66211a04F07D88",
+    "chainId": 61999
+  },
+  "transactions": [
+    {
+      "label": "dual_source_snapshot",
+      "hash": "0x4b6da0ba54cc8ee275e4c6ad1ef43796e4b73f8b322a67867bffea0ad26bf41b",
+      "signer": "0xa4523a5232cfdff562ffff20e7fd410fe2bb789f",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "reason": null,
+      "returnValue": "78feb3631e949058120acb5b094e0364df30e9a1d2d967e3281db1669fdbc129"
+    },
+    {
+      "label": "across_2016_leap_second",
+      "hash": "0x42e1ecec38a50f49b788fb18d2ad2190e2b7cbc5d2f5c509f113599b7adc1f71",
+      "signer": "0xa4523a5232cfdff562ffff20e7fd410fe2bb789f",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "reason": null,
+      "returnValue": "397ade157527d94e6a06572f8afdfd153a8a4a083c153d4a4d5bfe9420e5a6c4"
+    },
+    {
+      "label": "replay_same_certificate",
+      "hash": "0x36eae9a39ba68d8098addcb3e5a11f50b0ca4d57e9721547ffb22d06c5c1fe5e",
+      "signer": "0xa4523a5232cfdff562ffff20e7fd410fe2bb789f",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "reason": null,
+      "returnValue": "397ade157527d94e6a06572f8afdfd153a8a4a083c153d4a4d5bfe9420e5a6c4"
+    },
+    {
+      "label": "outside_source_horizon",
+      "hash": "0x5371665f55d71b72cfe06cbe893d960a0af8cad0d452b2779c7276235c4e2431",
+      "signer": "0xa4523a5232cfdff562ffff20e7fd410fe2bb789f",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "ERROR",
+      "reason": null
+    }
+  ],
+  "finalState": {
+    "digest": "78feb3631e949058120acb5b094e0364df30e9a1d2d967e3281db1669fdbc129",
+    "key": "397ade157527d94e6a06572f8afdfd153a8a4a083c153d4a4d5bfe9420e5a6c4",
+    "certificate": {
+      "snapshot": "78feb3631e949058120acb5b094e0364df30e9a1d2d967e3281db1669fdbc129",
+      "start": 1483228799,
+      "end": 1483228800,
+      "posix_seconds": 1,
+      "adjustment": 1,
+      "elapsed_seconds": 2,
+      "transitions": [
+        [
+          1483228800,
+          37
+        ]
+      ]
+    },
+    "transitionCount": 28,
+    "expiresExclusive": 1814140800
+  }
+}
