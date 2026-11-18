@@ -1,3 +1,4 @@
+import {TransactionHashVariant} from 'genlayer-js/types'
 import assert from 'node:assert/strict'
 import {readFileSync, writeFileSync} from 'node:fs'
 import {client, finalized, outcome} from './network.mjs'
@@ -12,7 +13,7 @@ export function session() {
     if (destination) writeFileSync(destination, JSON.stringify(evidence,null,2)+'\n')
   }
   const read = async (functionName,args) => {
-    const raw = await client.readContract({address:deployment.address,functionName,args,stateStatus:'finalized'})
+    const raw = await client.readContract({address:deployment.address,functionName,args,transactionHashVariant:TransactionHashVariant.LATEST_FINAL})
     return raw ? JSON.parse(raw) : null
   }
   async function send(label, functionName, args, account, expected='SUCCESS') {
